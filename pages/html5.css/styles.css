@@ -1,0 +1,83 @@
+body{
+	background: #7e7d7d;
+	margin: 0;
+}
+.middle-container{
+	margin: 0px auto;
+	max-width: 720px;
+	background:#fff;
+	border-radius: 5px;
+}
+.logo{
+	width: 180px;
+	float: left;
+	padding-right: 10px;
+}
+.middle-container h1{
+    padding-top: 30px;
+    margin-top: 0px;
+} 
+.menu{
+	margin-bottom: 0px;
+}
+.menu li{
+	display: inline-block;
+}
+
+.hover{
+	position: relative;
+	padding: 0;
+   	line-height: 0;
+}
+.submenu{
+	display: none;
+	position: absolute;
+    top: 8px;
+    padding: 0 0 5px;
+    width: 68%;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #000;
+    line-height: 1;
+}
+.submenu li{
+	padding-left: 5px;
+}
+.menu > .hover:hover > .submenu{
+	display: block;
+}
+main{
+	text-align: justify;
+}
+main article, main a{
+	padding: 0 10px;
+}
+.col-right{
+	width: 25%;
+	float: right;
+	background: #a29898;
+	border-radius: 5px;
+	font-size: 13px;
+    margin: 5px;
+}
+.col-right h3{
+	margin-bottom: 0;
+	padding: 5px;
+}
+.col-right p{
+	margin: 0;
+	padding: 5px;
+}
+.col-left h2{
+	margin-top: 0px;
+}
+.mail, .name{
+    display: block;
+    text-align: center;
+}    
+
+
+
+
+
+

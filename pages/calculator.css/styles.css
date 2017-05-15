@@ -1,0 +1,80 @@
+body{
+	background: #7e7d7d;
+	margin: 0;
+}
+.middle-container{
+	margin: 0px auto;
+	max-width: 720px;
+	background:#fff;
+	border-radius: 5px;
+}
+.logo{
+	width: 180px;
+	float: left;
+	padding-right: 10px;
+}
+.middle-container h1{
+  padding-top: 30px;
+  margin-top: 0px;
+} 
+.menu{
+	margin-bottom: 0px;
+}
+.menu li{
+	display: inline-block;
+}
+.hover{
+  position: relative;
+  padding: 0;
+  line-height: 0;
+}
+.submenu{
+  display: none;
+  position: absolute;
+  top: 8px;
+  padding: 0 0 5px;
+  width: 68%;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  line-height: 1;
+}
+.submenu li{
+  padding-left: 5px;
+}
+.menu > .hover:hover > .submenu{
+	display: block;
+}
+main{
+	text-align: justify;
+}
+table {
+   margin: 0 auto;
+}
+td {
+  padding: 0;
+  line-height: 0;
+  width: 30px;
+}
+table button {
+  width: 100%;   
+  margin: 0;
+  height: 20px;
+  line-height: 13px;
+}
+table input {
+  width: 180px;   
+}
+.button-equally {
+  height: 42px;     
+}
+.mail, .name{
+  display: block;
+  text-align: center;
+}    
+
+
+
+
+
+
