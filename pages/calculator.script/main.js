@@ -6,8 +6,8 @@ function handler(){
 		screen.value = "";
 	}
 	if(equalButtonPressed === true){
-		previousValue = undefined;
-		conditionCalculation = undefined;
+		previousValue = NaN;
+		conditionCalculation = NaN;
 		screen.value = "";
 		equalButtonPressed = false;
 	}
@@ -69,8 +69,8 @@ var screen = document.querySelector('input');
 function handlerReset(){
 	screen.value='0';
 	newNamberEntered = false;
-	previousValue = undefined;
-	conditionCalculation = undefined;
+	previousValue = NaN;
+	conditionCalculation = NaN;
 }
 reset.forEach(function (reset){
 	reset.addEventListener('click',handlerReset);
