@@ -15,7 +15,7 @@ var testQuestion5 = document.forms.test5;
  var correctsMultPercentage;
  var total; 
 
- testQuestion4.onchange = function() {
+/*testQuestion4.onchange = function() {
   var checkboxOff = testQuestion4.querySelectorAll('[type="checkbox"]'),
       checkboxOn = testQuestion4.querySelectorAll('[type="checkbox"]:checked');
   for(var j=0; j<checkboxOff.length; j++)
@@ -40,7 +40,7 @@ testQuestion5.onchange = function() {
       	checkboxOff[j].disabled = false; 
     }
 } 
-
+*/
 
 function resultTest(){
 	correctsSingle = 0;
@@ -56,18 +56,20 @@ function resultTest(){
 	 		
 
 	correctsMult = 0;
-	if(testCheckbox1.checked){
-	 		correctsMult ++;
+	var checkedQuestion4 = document.querySelectorAll('input[name="question4"]:checked');
+	if(testCheckbox1.checked
+	 	&&	testCheckbox2.checked
+		&& checkedQuestion4.length ===2){
+	 		correctsMult +=2;
 		}
-	if(testCheckbox2.checked){
-	 		correctsMult ++;
+
+	var checkedQuestion5 = document.querySelectorAll('input[name="question5"]:checked');
+	if(testCheckbox3.checked 
+		&& testCheckbox4.checked
+		&& checkedQuestion5.length ===2){
+	 		correctsMult +=2;
 		}
-	if(testCheckbox3.checked){
-	 		correctsMult ++;
-		}
-	if(testCheckbox4.checked){
-	 		correctsMult ++;
-		}
+	
 
 		
 	corectAnsewers = correctsSingle + correctsMult;
